@@ -6,21 +6,6 @@ class Program
 {
     static async Task Main(string[] args)
     {
-        await AwaitSync();
-        await WhenAny();
-    }
-
-    static async Task AwaitSync()
-    {
-        var t1 = Dance();
-        var t2 = LearnAndSing();
-
-        await t1;
-        await t2;
-    }
-
-    static async Task WhenAny()
-    {
         var t1 = Dance();
         var t2 = LearnAndSing();
 
